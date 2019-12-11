@@ -1,7 +1,7 @@
 # Python program to implement Quick Sort
 
 # Partition method takes element as pivot
-# places the pivot element at its correcto position
+# places the pivot element at its correct position
 # in sorted array, and places al smaller (smaller than pivot)
 # to left of pivot and all greater elements of right pivot
 
@@ -54,12 +54,6 @@ def quickSort(arr,start,end):
 
 if __name__ == '__main__':
     arr = [29,99,27,41,66,28,44,78,87,19,31,76,58,88,83,97,12,21,44]
-    # n = len(arr)
     quickSort(arr,0,len(arr)-1)
     
-    '''
-    for i in range(n):
-        print("%d" %arr[i])
-    '''
-
     print (arr)

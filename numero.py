@@ -24,7 +24,15 @@ def breakingScores(scores):
     A = [cmax,cmin]
     return A
 
+def pairSumSequence(n):
+    sum = 0
+    for i in range(n):
+        sum = sum + pairSum(i,i+1)
 
+    return sum
+
+def pairSum(a,b):
+    return a + b
 
 # Definimos un par de numeros uno flotante y otro entero
 num1=int(6)
@@ -38,3 +46,4 @@ print (divisibleSumPairs(6,3,A))
 B=[10,5,20,20,4,5,2,25,1]
 print (breakingScores(B))
 
+print(pairSumSequence(num1))
